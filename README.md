@@ -11,7 +11,9 @@
 - iOS: https://fir.im/tios
 - Android: https://fir.im/tand
 
-如果要连接自己的服务器, 可以反编译android的包, 然后修改appConfig.lua中的远程服务器地址, 然后重新打包就可以玩了.
+如果要连接自己的服务器
+ + 简单模式: 使用PC客户端/Mac客户端(不支持微信登录, 只能使用游客登录, 客户端群文件共享)
+ + 困难模式: 可以反编译android的包, 然后修改appConfig.lua中的远程服务器地址, 然后重新打包就可以玩了.
 
 ### 功能介绍
 
@@ -43,8 +45,9 @@
 ## 源码编译
 
 ```bash
+go get github.com/lonnng/nano
 go get github.com/lonnng/nanoserver
-cd $GOPATH/src/github.com/lonng/nanoserver/cmd/mahjong
+cd $GOPATH/src/github.com/lonnng/nanoserver/cmd/mahjong
 go build
 ./mahjong
 ```
